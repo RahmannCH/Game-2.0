@@ -1,0 +1,41 @@
+{
+  "name": "tycoon-2.0",
+  "version": "1.0.0",
+  "description": "Advanced Farm Simulator - Build your dream farm, grow crops, and manage your economy",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "http-server -p 8080 -g",
+    "serve": "http-server -p 3000 -g",
+    "start": "http-server -p 8080 -g",
+    "build": "echo 'Static site - no build step needed'",
+    "test": "echo 'No tests configured'",
+    "preview": "http-server -p 3000 -g"
+  },
+  "keywords": [
+    "phaser",
+    "game",
+    "farm",
+    "tycoon",
+    "simulator",
+    "agriculture",
+    "webgl"
+  ],
+  "author": "RahmannCH",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RahmannCH/Game-2.0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RahmannCH/Game-2.0/issues"
+  },
+  "homepage": "https://github.com/RahmannCH/Game-2.0#readme"
+}
