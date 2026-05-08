@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dscksjy0sr7h3"
+path="res://.godot/imported/digging-up-the-soil-and-paus6qav.wav-71d36db6c2fde02e5cfe20a452767390.sample"
+
+[deps]
+
+source_file="res://Game 2.0/digging-up-the-soil-and-paus6qav.wav"
+dest_files=["res://.godot/imported/digging-up-the-soil-and-paus6qav.wav-71d36db6c2fde02e5cfe20a452767390.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

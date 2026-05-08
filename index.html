@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tycoon 2.0 | Advanced Farm Simulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- UI OVERLAY -->
+        <div id="ui-layer">
+            
+            <!-- TOP BAR NAVIGATION -->
+            <div class="top-bar">
+                <div class="nav-buttons">
+                    <button id="nav-shop" class="ui-btn blue">
+                        <span class="icon">📦</span> SHOP
+                    </button>
+                    <button id="nav-farm" class="ui-btn green">
+                        <span class="icon">🏡</span> MY GARDEN
+                    </button>
+                    <button id="nav-market" class="ui-btn red">
+                        <span class="icon">🛍️</span> SELL MARKET
+                    </button>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-item coin-bg">
+                        <span class="icon">🪙</span>
+                        <span id="val-coins">500</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR (Decorational/Future Features) -->
+            <div class="right-sidebar">
+                <button class="side-btn"><span class="icon">☀️</span></button>
+                <button class="side-btn"><span class="icon">🏆</span></button>
+                <button class="side-btn"><span class="icon">📊</span></button>
+                <button class="side-btn"><span class="icon">📋</span></button>
+                <button class="side-btn"><span class="icon">💬</span></button>
+            </div>
+
+            <!-- SYSTEM NOTIFICATION -->
+            <div id="system-notification" class="hidden">
+                <div class="notif-content">
+                    <span id="notif-icon">💡</span>
+                    <span id="notif-text">Welcome to the farm!</span>
+                </div>
+            </div>
+
+            <!-- HOTBAR INVENTORY -->
+            <div class="hotbar-container">
+                <div id="hotbar" class="hotbar">
+                    <!-- Slots will be generated dynamically by UIManager -->
+                </div>
+            </div>
+
+            <!-- SHOP MODAL -->
+            <div id="shop-modal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Seed Shop</h2>
+                        <button class="close-btn" id="close-shop">✖</button>
+                    </div>
+                    <div class="modal-body" id="shop-items">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- MARKET MODAL -->
+            <div id="market-modal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sell Market</h2>
+                        <button class="close-btn" id="close-market">✖</button>
+                    </div>
+                    <div class="modal-body" id="market-items">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-sell-all" class="ui-btn green" style="width: 100%;">Sell All Inventory</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CORE SCRIPTS -->
+    <script src="js/core/SignalBus.js"></script>
+    <script src="js/data/SeedData.js"></script>
+    <script src="js/core/EconomyManager.js"></script>
+    
+    <!-- ENTITIES -->
+    <script src="js/entities/Player.js"></script>
+    <script src="js/entities/Crop.js"></script>
+
+    <!-- SCENES -->
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/FarmScene.js"></script>
+    <script src="js/scenes/ShopScene.js"></script>
+    <script src="js/scenes/MarketScene.js"></script>
+
+    <!-- UI & MAIN -->
+    <script src="js/ui/UIManager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bapqndp6cimjk"
+path="res://.godot/imported/se_5g4kq4lb7fojfqzk.wav-98f652a35e019873d74226f4e4e93ceb.sample"
+
+[deps]
+
+source_file="res://Game 2.0/se_5g4kq4lb7fojfqzk.wav"
+dest_files=["res://.godot/imported/se_5g4kq4lb7fojfqzk.wav-98f652a35e019873d74226f4e4e93ceb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
